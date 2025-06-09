@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Twitter, Instagram, DiscIcon as Discord, Edit3 } from "lucide-react";
-import Button from "@/components/ui/Button";
+import Button from "@/components/ui/button";
 import StreamInfoModal from "@/components/dashboard/common/StreamInfoModal";
 
 interface AboutSectionProps {
@@ -38,7 +38,9 @@ const AboutSection = ({
         <div className="flex flex-col items-center gap-6">
           <h2 className="text-white text-lg font-medium">About {username}</h2>
           <span className="text-sm text-gray-400 mr-4">
-            <span className="text-lightPrimary">{followers.toLocaleString()}</span>{" "}
+            <span className="text-lightPrimary">
+              {followers.toLocaleString()}
+            </span>{" "}
             followers
           </span>
         </div>

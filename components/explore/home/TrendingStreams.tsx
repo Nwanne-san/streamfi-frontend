@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { Eye, ChevronDown, ChevronUp } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import Button from "@/components/ui/Button";
+import Button from "@/components/ui/button";
 import { TrendingStreamsProps } from "@/types/explore/home";
 
 export function TrendingStreams({ title, streams }: TrendingStreamsProps) {

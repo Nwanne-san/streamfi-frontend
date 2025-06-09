@@ -1,10 +1,10 @@
-import { Button } from "@/components/ui/Button"
-import { VideoIcon, Scissors, Upload } from "lucide-react"
+import { Button } from "@/components/ui/button";
+import { VideoIcon, Scissors, Upload } from "lucide-react";
 
 interface EmptyStateProps {
-  type: "videos" | "clips"
-  isOwner: boolean
-  username: string
+  type: "videos" | "clips";
+  isOwner: boolean;
+  username: string;
 }
 
 const EmptyState = ({ type, isOwner, username }: EmptyStateProps) => {
@@ -19,7 +19,9 @@ const EmptyState = ({ type, isOwner, username }: EmptyStateProps) => {
       </div>
 
       <h2 className="text-white text-xl font-medium mb-2">
-        {isOwner ? `You don't have any ${type} yet` : `${username} doesn't have any ${type} yet`}
+        {isOwner
+          ? `You don't have any ${type} yet`
+          : `${username} doesn't have any ${type} yet`}
       </h2>
 
       <p className="text-gray-400 max-w-md mb-6">
@@ -39,7 +41,7 @@ const EmptyState = ({ type, isOwner, username }: EmptyStateProps) => {
         </Button>
       )}
     </div>
-  )
-}
+  );
+};
 
-export default EmptyState
+export default EmptyState;
