@@ -19,7 +19,7 @@ interface ButtonProps {
 }
 
 export const Button = ({
-  className, 
+  className,
   children,
   onClick,
   href,
@@ -65,7 +65,7 @@ export const Button = ({
     sizeStyles[size],
     disabled || loading ? stateStyles.disabled : "",
     loading ? stateStyles.loading : "",
-    className,
+    className
   );
 
   // Button content with loading indicator
