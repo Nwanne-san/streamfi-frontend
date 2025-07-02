@@ -19,7 +19,7 @@ interface ButtonProps {
 }
 
 export const Button = ({
-  className,
+  className, 
   children,
   onClick,
   href,
